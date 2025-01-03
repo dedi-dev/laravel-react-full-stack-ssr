@@ -24,6 +24,8 @@
 15. php artisan make:enum Enum\PermissionEnum, php artisan make:enum Enum\RolesEnum
 16. setup DatabaseSeeder.php | php artisan migrate:fresh --seed
 17. class User extends Authenticatable implements MustVerifyEmail | (setup email for register) | (https://mailpit.axllent.org/) for testing email
+18. php artisan make:resource AuthUserResource
+19. php artisan make:resource UserResource
 
 ## About Laravel
 
