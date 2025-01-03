@@ -7,6 +7,23 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Tutorial
+1. laravel new laravel-react-full-stack-ssr
+2. select breeze
+3. select react
+4. select dark,ssr,typescript
+5. pest
+6. mysqlite
+7. do migration
+8. composer run dev
+10. test build: npm run build, php artisan serve
+11. install inertia v2 https://inertiajs.com/upgrade-guide: npm install @inertiajs/react@^2.0 | composer require inertiajs/inertia-laravel:^2.0
+12. composer require spatie/laravel-permission (https://spatie.be/docs/laravel-permission/v6/installation-laravel)
+13. php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+14. php artisan migrate
+15. php artisan make:enum Enum\PermissionEnum, php artisan make:enum Enum\RolesEnum
+16. setup DatabaseSeeder.php | php artisan migrate:fresh --seed
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
